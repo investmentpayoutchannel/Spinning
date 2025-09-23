@@ -5,7 +5,11 @@ A React TypeScript application featuring a welcome page and fortune wheel for ne
 
 ## Recent Changes
 - Project initialized on September 23, 2025
-- Setting up development environment and workflows
+- **September 23, 2025**: Complete database and authentication cleanup
+  - Removed all unused database configurations (Drizzle, Prisma, PostgreSQL)
+  - Removed authentication systems (Passport, bcrypt, sessions)
+  - Cleaned dependencies for Netlify deployment
+  - Project now runs as pure client-side application
 
 ## User Preferences
 - Clean, modern UI with gradient designs
@@ -14,10 +18,11 @@ A React TypeScript application featuring a welcome page and fortune wheel for ne
 
 ## Project Architecture
 - **Frontend**: React 18 with TypeScript, Wouter routing, TanStack Query, Tailwind CSS
-- **Backend**: Express.js with TypeScript
-- **Database**: PostgreSQL with Drizzle ORM
+- **Backend**: Express.js (development server only)
+- **Data**: Client-side mock data with localStorage persistence
 - **UI Components**: Radix UI primitives with custom styling
 - **Build Tool**: Vite with custom configuration
+- **Deployment**: Static site ready for Netlify/Vercel
 
 ### Key Features
 - Welcome page with bonus claim functionality
@@ -28,9 +33,8 @@ A React TypeScript application featuring a welcome page and fortune wheel for ne
 
 ### File Structure
 - `client/` - React frontend application
-- `server/` - Express.js backend API
-- `shared/` - Shared types and schemas
-- `prisma/` - Database schema and migrations
+- `server/` - Express.js development server (basic health check only)
+- `shared/` - Shared TypeScript interfaces
 - `attached_assets/` - Static assets and images
 
 ### Dependencies
