@@ -36,6 +36,8 @@ A React TypeScript application featuring a welcome page and fortune wheel for ne
 - `server/` - Express.js development server (basic health check only)
 - `shared/` - Shared TypeScript interfaces
 - `attached_assets/` - Static assets and images
+- `dist/public/` - Production build output for deployment
+- `netlify.toml` - Netlify deployment configuration
 
 ### Dependencies
 - React Query for state management
