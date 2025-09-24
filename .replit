@@ -15,15 +15,15 @@ author = "agent"
 
 [[workflows.workflow.tasks]]
 task = "workflow.run"
-args = "BDO-APP Development Server"
+args = "Development Server"
 
 [[workflows.workflow]]
-name = "BDO-APP Development Server"
+name = "Development Server"
 author = "agent"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "cd BDO-APP && npm run dev"
+args = "npm run dev"
 waitForPort = 5000
 
 [workflows.workflow.metadata]
@@ -32,7 +32,3 @@ outputType = "webview"
 [[ports]]
 localPort = 5000
 externalPort = 80
-
-[[ports]]
-localPort = 35853
-externalPort = 3000
